@@ -1,5 +1,0 @@
-E:/projs/imfs/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/projs/imfs/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/projs/imfs/cmake-build-debug/gui/CMakeFiles/fsGUI.dir
-E:/projs/imfs/cmake-build-debug/gui/CMakeFiles/edit_cache.dir
-E:/projs/imfs/cmake-build-debug/gui/CMakeFiles/rebuild_cache.dir

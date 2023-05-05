@@ -1,4 +1,0 @@
-ToolSet: 17.0 (local)@D:\Microsoft.apps\Microsoft Visual Studio\2022\Professional
-Options: msvc.arch=amd64
-
-Options:-DVULKAN_SDK=$ENV{VULKAN_SDK}
