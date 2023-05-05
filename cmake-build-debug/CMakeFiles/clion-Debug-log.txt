@@ -1,0 +1,5 @@
+"/Applications/Dev Apps/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=/Applications/Dev Apps/CLion.app/Contents/bin/ninja/mac/ninja" -G Ninja -S /Users/sl/Projects/imfs -B /Users/sl/Projects/imfs/cmake-build-debug
+/Users/sl/Projects/imfs
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/sl/Projects/imfs/cmake-build-debug

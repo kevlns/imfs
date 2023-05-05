@@ -1,0 +1,241 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: imfs
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.8
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/sl/Projects/imfs/cmake-build-debug/
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sl/Projects/imfs/cmake-build-debug && "/Applications/Dev Apps/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sl/Projects/imfs/cmake-build-debug && "/Applications/Dev Apps/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/sl/Projects/imfs -B/Users/sl/Projects/imfs/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/sl/Projects/imfs/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target fsGUI
+
+
+#############################################
+# Order-only phony target for fsGUI
+
+build cmake_object_order_depends_target_fsGUI: phony || gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/backends/imgui_impl_glfw.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/backends/imgui_impl_glfw.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/backends/imgui_impl_glfw.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir/backends
+
+build gui/CMakeFiles/fsGUI.dir/imgui.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/imgui.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/imgui.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/imgui_demo.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/imgui_demo.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/imgui_demo.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/imgui_draw.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/imgui_draw.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/imgui_draw.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/imgui_tables.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/imgui_tables.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/imgui_tables.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/imgui_widgets.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/imgui_widgets.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/imgui_widgets.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/main.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/main.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir
+
+build gui/CMakeFiles/fsGUI.dir/backends/general/imgui_impl_vulkan.cpp.o: CXX_COMPILER__fsGUI_Debug /Users/sl/Projects/imfs/gui/backends/general/imgui_impl_vulkan.cpp || cmake_object_order_depends_target_fsGUI
+  DEP_FILE = gui/CMakeFiles/fsGUI.dir/backends/general/imgui_impl_vulkan.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics -std=gnu++11
+  INCLUDES = -I/Users/sl/Projects/imfs/gui/include -I/Users/sl/Projects/imfs/gui/backends -I/Users/sl/Projects/imfs/gui/backends/general -I/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  OBJECT_FILE_DIR = gui/CMakeFiles/fsGUI.dir/backends/general
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target fsGUI
+
+
+#############################################
+# Link the executable gui/fsGUI
+
+build gui/fsGUI: CXX_EXECUTABLE_LINKER__fsGUI_Debug gui/CMakeFiles/fsGUI.dir/backends/imgui_impl_glfw.cpp.o gui/CMakeFiles/fsGUI.dir/imgui.cpp.o gui/CMakeFiles/fsGUI.dir/imgui_demo.cpp.o gui/CMakeFiles/fsGUI.dir/imgui_draw.cpp.o gui/CMakeFiles/fsGUI.dir/imgui_tables.cpp.o gui/CMakeFiles/fsGUI.dir/imgui_widgets.cpp.o gui/CMakeFiles/fsGUI.dir/main.cpp.o gui/CMakeFiles/fsGUI.dir/backends/general/imgui_impl_vulkan.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+  LINK_PATH = -L/Users/sl/Projects/imfs/3rdparty/arrch64/GLFW/lib
+  OBJECT_DIR = gui/CMakeFiles/fsGUI.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = gui/fsGUI
+  TARGET_PDB = fsGUI.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build gui/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sl/Projects/imfs/cmake-build-debug/gui && "/Applications/Dev Apps/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build gui/edit_cache: phony gui/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build gui/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/sl/Projects/imfs/cmake-build-debug/gui && "/Applications/Dev Apps/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/sl/Projects/imfs -B/Users/sl/Projects/imfs/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build gui/rebuild_cache: phony gui/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+build fsGUI: phony gui/fsGUI
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sl/Projects/imfs/cmake-build-debug
+
+build all: phony gui/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/sl/Projects/imfs/cmake-build-debug/gui
+
+build gui/all: phony gui/fsGUI
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Phony target to force glob verification run.
+
+build /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force: phony
+
+
+#############################################
+# Re-run CMake to check if globbed directories changed.
+
+build /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake_force
+  pool = console
+  restat = 1
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs | /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/sl/Projects/imfs/CMakeLists.txt /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /Users/sl/Projects/imfs/gui/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Applications/Dev$ Apps/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /Users/sl/Projects/imfs/CMakeLists.txt /Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/VerifyGlobs.cmake /Users/sl/Projects/imfs/gui/CMakeLists.txt CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
