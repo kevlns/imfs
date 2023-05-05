@@ -717,7 +717,7 @@ namespace ImGui
 
     // Tables
     // - Full-featured replacement for old Columns API.
-    // - See Demo->Tables for demo code. See top of imgui_tables.cpp for general commentary.
+    // - See Demo->Tables for demo code. See top of imgui_tables.cpp for vulkan commentary.
     // - See ImGuiTableFlags_ and ImGuiTableColumnFlags_ enums for a description of available flags.
     // The typical call flow is:
     // - 1. Call BeginTable(), early out if returning false.
@@ -1898,7 +1898,7 @@ struct ImGuiStyle
 // [SECTION] ImGuiIO
 //-----------------------------------------------------------------------------
 // Communicate most settings and inputs/outputs to Dear ImGui using this structure.
-// Access via ImGui::GetIO(). Read 'Programmer guide' section in .cpp file for general usage.
+// Access via ImGui::GetIO(). Read 'Programmer guide' section in .cpp file for vulkan usage.
 //-----------------------------------------------------------------------------
 
 // [Internal] Storage used by IsKeyDown(), IsKeyPressed() etc functions.

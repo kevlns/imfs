@@ -420,17 +420,17 @@ typedef struct {
 
 	/**
 	 * Metal does not distinguish functionality between queues, which would normally mean only
-	 * a single general-purpose queue family with multiple queues is needed. However, Vulkan
+	 * a single vulkan-purpose queue family with multiple queues is needed. However, Vulkan
 	 * associates command buffers with a queue family, whereas Metal associates command buffers
 	 * with a specific Metal queue. In order to allow a Metal command buffer to be prefilled
 	 * before is is formally submitted to a Vulkan queue, each Vulkan queue family can support
 	 * only a single Metal queue. As a result, in order to provide parallel queue operations,
 	 * MoltenVK provides multiple queue families, each with a single queue.
 	 *
-	 * If this parameter is disabled, all queue families will be advertised as having general-purpose
+	 * If this parameter is disabled, all queue families will be advertised as having vulkan-purpose
 	 * graphics + compute + transfer functionality, which is how the actual Metal queues behave.
 	 *
-	 * If this parameter is enabled, one queue family will be advertised as having general-purpose
+	 * If this parameter is enabled, one queue family will be advertised as having vulkan-purpose
 	 * graphics + compute + transfer functionality, and the remaining queue families will be advertised
 	 * as having specialized graphics OR compute OR transfer functionality, to make it easier for some
 	 * apps to select a queue family with the appropriate requirements.
@@ -765,7 +765,7 @@ typedef struct {
 	 * from device memory. If this setting is enabled, and placement MTLHeaps are
 	 * available on the platform, MoltenVK will allocate a placement MTLHeap for each VkDeviceMemory
 	 * instance, and allocate textures and buffers from that placement heap. If this environment
-	 * variable is disabled, MoltenVK will allocate textures and buffers from general device memory.
+	 * variable is disabled, MoltenVK will allocate textures and buffers from vulkan device memory.
 	 *
 	 * Apple recommends that MTLHeaps should only be used for specific requirements such as aliasing
 	 * or hazard tracking, and MoltenVK testing has shown that allocating multiple textures of
@@ -779,7 +779,7 @@ typedef struct {
 	 * MVK_CONFIG_USE_MTLHEAP
 	 * runtime environment variable or MoltenVK compile-time build setting.
 	 * If neither is set, this setting is disabled by default, and MoltenVK
-	 * will allocate texures and buffers from general device memory.
+	 * will allocate texures and buffers from vulkan device memory.
 	 */
 	VkBool32 useMTLHeap;
 

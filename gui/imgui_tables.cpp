@@ -1380,7 +1380,7 @@ void    ImGui::EndTable()
 
     // Layout in outer window
     // (FIXME: To allow auto-fit and allow desirable effect of SameLine() we dissociate 'used' vs 'ideal' size by overriding
-    // CursorPosPrevLine and CursorMaxPos manually. That should be a more general layout feature, see same problem e.g. #3414)
+    // CursorPosPrevLine and CursorMaxPos manually. That should be a more vulkan layout feature, see same problem e.g. #3414)
     if (inner_window != outer_window)
     {
         EndChild();

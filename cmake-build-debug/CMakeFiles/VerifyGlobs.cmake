@@ -3,61 +3,61 @@
 cmake_policy(SET CMP0009 NEW)
 
 # IMGUI_SOURCES at gui/CMakeLists.txt:4 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sl/Projects/imfs/gui/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "E:/projs/imfs/gui/*.cpp")
 set(OLD_GLOB
-  "/Users/sl/Projects/imfs/gui/imgui.cpp"
-  "/Users/sl/Projects/imfs/gui/imgui_demo.cpp"
-  "/Users/sl/Projects/imfs/gui/imgui_draw.cpp"
-  "/Users/sl/Projects/imfs/gui/imgui_tables.cpp"
-  "/Users/sl/Projects/imfs/gui/imgui_widgets.cpp"
-  "/Users/sl/Projects/imfs/gui/main.cpp"
+  "E:/projs/imfs/gui/imgui.cpp"
+  "E:/projs/imfs/gui/imgui_demo.cpp"
+  "E:/projs/imfs/gui/imgui_draw.cpp"
+  "E:/projs/imfs/gui/imgui_tables.cpp"
+  "E:/projs/imfs/gui/imgui_widgets.cpp"
+  "E:/projs/imfs/gui/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "E:/projs/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # IMGUI_SOURCES at gui/CMakeLists.txt:4 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sl/Projects/imfs/gui/backends/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "E:/projs/imfs/gui/backends/*.cpp")
 set(OLD_GLOB
-  "/Users/sl/Projects/imfs/gui/backends/imgui_impl_glfw.cpp"
+  "E:/projs/imfs/gui/backends/imgui_impl_glfw.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "E:/projs/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # IMGUI_HEADERS at gui/CMakeLists.txt:3 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sl/Projects/imfs/gui/backends/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "E:/projs/imfs/gui/backends/*.h")
 set(OLD_GLOB
-  "/Users/sl/Projects/imfs/gui/backends/imgui_impl_glfw.h"
+  "E:/projs/imfs/gui/backends/imgui_impl_glfw.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "E:/projs/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()
 
-# IMGUI_BACKEND at gui/CMakeLists.txt:15 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sl/Projects/imfs/gui/backends/general/*.cpp")
+# IMGUI_BACKEND at gui/CMakeLists.txt:7 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "E:/projs/imfs/gui/backends/vulkan/*.cpp")
 set(OLD_GLOB
-  "/Users/sl/Projects/imfs/gui/backends/general/imgui_impl_vulkan.cpp"
+  "E:/projs/imfs/gui/backends/vulkan/imgui_impl_vulkan.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "E:/projs/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()
 
 # IMGUI_HEADERS at gui/CMakeLists.txt:3 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/Users/sl/Projects/imfs/gui/include/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "E:/projs/imfs/gui/include/*.h")
 set(OLD_GLOB
-  "/Users/sl/Projects/imfs/gui/include/imconfig.h"
-  "/Users/sl/Projects/imfs/gui/include/imgui.h"
-  "/Users/sl/Projects/imfs/gui/include/imgui_internal.h"
-  "/Users/sl/Projects/imfs/gui/include/imstb_rectpack.h"
-  "/Users/sl/Projects/imfs/gui/include/imstb_textedit.h"
-  "/Users/sl/Projects/imfs/gui/include/imstb_truetype.h"
+  "E:/projs/imfs/gui/include/imconfig.h"
+  "E:/projs/imfs/gui/include/imgui.h"
+  "E:/projs/imfs/gui/include/imgui_internal.h"
+  "E:/projs/imfs/gui/include/imstb_rectpack.h"
+  "E:/projs/imfs/gui/include/imstb_textedit.h"
+  "E:/projs/imfs/gui/include/imstb_truetype.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/Users/sl/Projects/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "E:/projs/imfs/cmake-build-debug/CMakeFiles/cmake.verify_globs")
 endif()

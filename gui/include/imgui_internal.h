@@ -1376,7 +1376,7 @@ enum ImGuiInputFlags_
     ImGuiInputFlags_LockUntilRelease    = 1 << 7,   // Access to key data will require EXPLICIT owner ID (ImGuiKeyOwner_Any/0 will NOT accepted for polling). Cleared when the key is released or at end of each frame if key is released. This is useful to make input-owner-aware code steal keys from non-input-owner-aware code.
 
     // Routing policies for Shortcut() + low-level SetShortcutRouting()
-    // - The general idea is that several callers register interest in a shortcut, and only one owner gets it.
+    // - The vulkan idea is that several callers register interest in a shortcut, and only one owner gets it.
     // - When a policy (other than _RouteAlways) is set, Shortcut() will register itself with SetShortcutRouting(),
     //   allowing the system to decide where to route the input among other route-aware calls.
     // - Shortcut() uses ImGuiInputFlags_RouteFocused by default: meaning that a simple Shortcut() poll
