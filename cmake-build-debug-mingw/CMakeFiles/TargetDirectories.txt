@@ -1,0 +1,5 @@
+E:/sl_projs/imfs/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+E:/sl_projs/imfs/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+E:/sl_projs/imfs/cmake-build-debug-mingw/gui/CMakeFiles/fsGUI.dir
+E:/sl_projs/imfs/cmake-build-debug-mingw/gui/CMakeFiles/edit_cache.dir
+E:/sl_projs/imfs/cmake-build-debug-mingw/gui/CMakeFiles/rebuild_cache.dir

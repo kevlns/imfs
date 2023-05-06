@@ -1,0 +1,10 @@
+# ninja log v5
+1	21	0	E:/sl_projs/imfs/cmake-build-debug-mingw/CMakeFiles/cmake.verify_globs	6b2bc303b46555a0
+24	403	7050874508155952	gui/CMakeFiles/fsGUI.dir/main.cpp.obj	99185c203bf7dab4
+2	404	7050874508175901	gui/CMakeFiles/fsGUI.dir/backends/vulkan/imgui_impl_vulkan.cpp.obj	369f05b6e3859f67
+20	1027	7050874514450918	gui/CMakeFiles/fsGUI.dir/imgui_demo.cpp.obj	af1a0e7d42c86f09
+17	1283	7050874516984132	gui/CMakeFiles/fsGUI.dir/imgui_tables.cpp.obj	d374db15f1f11ee3
+7	1479	7050874518819221	gui/CMakeFiles/fsGUI.dir/backends/imgui_impl_glfw.cpp.obj	f89511e59921cc0a
+14	1602	7050874520195555	gui/CMakeFiles/fsGUI.dir/imgui_draw.cpp.obj	777b26e1d75ddd4b
+11	1827	7050874522445459	gui/CMakeFiles/fsGUI.dir/imgui_widgets.cpp.obj	f50ffd93ccb5734
+0	2371	7050874527866822	gui/CMakeFiles/fsGUI.dir/imgui.cpp.obj	410067ddc42deb0a
