@@ -16,7 +16,7 @@
 #include <stdlib.h>         // abort
 #define GLFW_INCLUDE_NONE
 #define GLFW_INCLUDE_VULKAN
-#include "GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
 #include "vulkan/vulkan.h"
 //#include <vulkan/vulkan_beta.h>
 
@@ -593,3 +593,28 @@ int main(int, char**)
 
     return 0;
 }
+
+//#include <iostream>
+//#include <GLFW/glfw3.h>
+//#include <vulkan/vulkan.h>
+//
+//int main() {
+//    if (!glfwInit()) {
+//        std::cerr << "Failed to initialize GLFW" << std::endl;
+//        return -1;
+//    }
+//
+//    if (!glfwVulkanSupported()) {
+//        std::cerr << "Vulkan is not supported" << std::endl;
+//        glfwTerminate();
+//        return -1;
+//    }
+//
+//    // 创建Vulkan实例、窗口等。
+//
+//    // 释放资源并终止GLFW
+//    glfwTerminate();
+//
+//    std::cout << "ok";
+//    return 0;
+//}
